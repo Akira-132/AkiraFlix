@@ -14,13 +14,26 @@ body {
     color: var(--cor-texto);
 }
 
+.container-logotipo {
+    width: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .header {
     background-color: #000000;
     padding: 20px 50px;
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid var(--cor-destaque);
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
+    box-sizing: border-box;
+    height: 100px;
 }
 
 .logotipo {
@@ -44,7 +57,7 @@ body {
 .conteudo {
     padding: 30px 50px;
     max-width: 1500px;
-    margin: 0 auto;
+    margin-top: 112px;
 }
 
 .titulo-secao {

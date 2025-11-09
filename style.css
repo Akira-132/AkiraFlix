@@ -21,6 +21,11 @@ body {
     align-items: center;
 }
 
+.container-logotipo h1 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
 .header {
     background-color: #000000;
     padding: 20px 50px;
@@ -31,7 +36,7 @@ body {
     border-bottom: 2px solid var(--cor-destaque);
     top: 0;
     width: 100%;
-    z-index: 1000; 
+    z-index: 1000;
     box-sizing: border-box;
     height: 100px;
 }
@@ -49,7 +54,7 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
-.nav-principal .link-nav:hover {
+.sobre-nav .link-nav:hover {
     background-color: var(--cor-destaque);
     color: var(--cor-primaria);
 }
@@ -57,7 +62,7 @@ body {
 .conteudo {
     padding: 30px 50px;
     max-width: 1500px;
-    margin-top: 112px;
+    margin-top: 112px; 
 }
 
 .titulo-secao {
@@ -127,4 +132,35 @@ body {
 
 .link-filme:hover {
     background-color: #e04545;
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 10px 20px; 
+        height: 80px;  
+    }
+
+    .container-logotipo {
+        width: auto; 
+        justify-content: flex-start; 
+        gap: 10px; 
+    }
+
+    .logotipo {
+        height: 50px; 
+    }
+
+    .container-logotipo h1 {
+        font-size: 1.5rem;
+    }
+
+    .sobre-nav .link-nav {
+        font-size: 1.2rem;
+        padding: 8px 15px; 
+    }
+
+    .conteudo {
+        margin-top: 92px; 
+        padding: 20px;    
+    }
 }
